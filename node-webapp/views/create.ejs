@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('./partials/_meta') %>
+  <title>Create</title>
+</head>
+<body>
+  <%- include('./partials/_header') %>
+  <main class="container">
+    <form method="POST" action="/create" class="form-control">
+      <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <input type="text" class="form-control" id="description" name="description" placeholder="Homework">
+      </div>
+      <div class="mb-3">
+        <label for="deadline" class="form-label">Deadline</label>
+        <input type="date" class="form-control" name="deadline" id="deadline">
+      </div>
+      <div class="mb-3">
+        <input type="submit" class="btn btn-primary" value="Create">
+      </div>
+    </form>
+  </main>
+</body>
+</html>
